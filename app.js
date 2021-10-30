@@ -6,9 +6,9 @@ const cookieParser = require('cookie-parser');
 const rateLimit = require('./middleware/rateLimiter'); 
 var session = require('cookie-session');
 
-const request = require("request-promise")
-const cheerio = require("cheerio");
-const axios = require("axios")
+// const request = require("request-promise")
+// const cheerio = require("cheerio");
+// const axios = require("axios")
 
 dotenv.config({ path: './.env'}); 
 
@@ -38,11 +38,11 @@ app.set('view engine', 'hbs');
 // app.use(rateLimit.rateLimiterUsingThirdParty); 
  
 // Cookie session
-app.use(session({
-    secret: process.env.COOKIE_SESSION_SECRET,
-    resave: false,
-    saveUninitialized: true,
-}))
+// app.use(session({
+//     secret: process.env.COOKIE_SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: true,
+// }))
 
 // define routes
 app.use('/', require('./routes/pages')); 

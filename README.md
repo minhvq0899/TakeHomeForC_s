@@ -1,5 +1,11 @@
 # Minh's Website
 
+
+### Detailed instructions on how to build and run
+npm i
+npm start
+
+
 ### Question 1. Are there any sub-optimal choices( or short cuts taken due to limited time ) in your implementation?
 1. When I scrape the prices of all types of crypto from the two website, I only want the prices of Bitcoin and Ethereum. Instead of checking the name attribute of each JSON to get Bitcoin and Ethereum (something I should do), I took only the first two JSON because on both sites, Bitcoin and Ethereum are on top of the list. This is not ideal, as some sites may have different order of their crypto. 
 
