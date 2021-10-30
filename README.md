@@ -3,6 +3,7 @@
 
 ### Detailed instructions on how to build and run
 npm i
+
 npm start
 
 
